@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83bc789c26.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>        
+            <img src="logo1.png" class="andriod"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="header-text">
+                <p>Professor</p>
+                <h1>Hi, I'm <span> Rabia </span> <br> Javed From Pakistan </h1>
+            </div>
+    </div>
+</div>
+
+<!-------------About----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <img src="fit3.png">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"I am Rabia Javed, a dedicated academic from Hyderabad, Sindh, Pakistan, with a background in both bachelor's
+                     and master's degrees in Islamiyat from Sindh University. 
+                    I currently work as a contract professor at Quaid-e-Awam University of Engineering and Science Technology in Nawabshah. 
+                    My passion lies in Islamic studies, and I'm committed to furthering my expertise through future plans for an MPhil. 
+                    I aspire to contribute to the academic community and promote a comprehensive understanding of Islamiyat, 
+                    bridging traditional and modern perspectives."</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Teaching</span><br>Working in Quest Nawabshah</li>
+                            <li><span>Litrature Mastery</span><br>Reading and understanding Litrature</li>
+                            <li><span>Physcological Knowledege </span><br>Understanding the Physci of Students</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Event management</span><br>"I have a valuable background in event management, which includes planning, coordinating, 
+                                and executing various types of events. 
+                                My experience encompasses a range of skills such as logistics management, budgeting, 
+                                vendor coordination, and ensuring the seamless execution of events to create memorable experiences."
+                                It's a great opportunity to connect with other students and contribute to open-source projects. 🌟👩‍💻 </li>
+                            <li><span>Team Lead </span><br>"Consistently served as a team leader in my university, demonstrating leadership, organization, 
+                                and teamwork skills in various academic and extracurricular activities."</li>
+                            <li><span>1st Position Holder </span><br>"Top-ranked graduate from Sindh University, holding the first position in my academic pursuits."</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>Passed out Bachelors in Islamiyat from Sindh University Jamshoro </li>
+                            <li><span>2022</span><br>Passed out Masters in Islamiyat from Sindh University jamshoro </li> 
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Teaching</h2>
+                <p>Working as a Teacher</p>
+                <a href="https://www.linkedin.com/in/rabia-javed-3b8b4b293">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Islamic Lady </h2>
+                <p>Working as a Islamic Lady</p>
+                <a href="https://www.linkedin.com/in/rabia-javed-3b8b4b293">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>Professor</h2>
+                <p>Working in Quiad e Awam University of Engineering and Science Technology</p>
+                <a href="https://www.linkedin.com/in/rabia-javed-3b8b4b293">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------Contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>rabiajaveed776@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/falaknazsoomro/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@FalakSoomro/videos"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/falaknazsoomro"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/falaksoomro?igshid=NjIwNzIyMDk2Mg=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href=""download class="btn btn2" >Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2023 Rabia Soomro <i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+       for (var i = 0; i < tablinks.length; i++) {
+           tablinks[i].classList.remove("active-link");
+       }
+       for (var i = 0; i < tabcontents.length; i++) {
+           tabcontents[i].classList.remove("active-tab");
+       }
+       
+       // Add the "active" class to the selected tab link and tab content
+       document.getElementById(tabname).classList.add("active-tab");
+       event.currentTarget.classList.add("active-link");
+    }
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0"
+}
+function closemenu(){
+    sidemenu.style.right = "-200px"
+}
+
+</script>
+<form name="submit-to-google-sheet">
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziJJMbbcZdhHe7xmVNIMmd_47_AJEq3BJLeUxs2FQwtgescKE7Bn01a3BWCfpXmgZ0Nw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+
+
+</body>
+</html>
